@@ -198,6 +198,8 @@
   font-size: 1.1rem;
   line-height: 1.6;
   color: #ddd;
+  white-space: normal;
+  word-break: keep-all;
 }
 
 /* 제작사 섹션 */
@@ -250,6 +252,8 @@
 /* 추천 영화 섹션 */
 .recommendations-section {
   margin-top: 4rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .recommendations-section h3 {
