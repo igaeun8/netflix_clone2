@@ -56,7 +56,7 @@
 /* 그리드 레이아웃 */
 .detail-grid {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 3rem;
   align-items: start;
 }
@@ -253,6 +253,7 @@
 .recommendations-section {
   margin-top: 4rem;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
