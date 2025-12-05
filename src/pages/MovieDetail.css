@@ -71,7 +71,6 @@
 /* 정보 섹션 */
 .info-section {
   padding-top: 1rem;
-  min-width: 0; /* 그리드 아이템 넘침 방지 */
 }
 
 .detail-title {
@@ -200,7 +199,7 @@
   line-height: 1.6;
   color: #ddd;
   white-space: normal;
-  word-break: break-word;
+  word-break: keep-all;
 }
 
 /* 제작사 섹션 */
@@ -261,12 +260,6 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-}
-
-.recommendations-list {
-  width: 100%;
-  overflow-x: auto;
-  padding-bottom: 1rem;
 }
 
 /* 예고편 모달 */
