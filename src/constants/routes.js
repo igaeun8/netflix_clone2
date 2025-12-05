@@ -5,6 +5,6 @@ export const ROUTES = {
   POPULAR: '/popular',
   SEARCH: '/search',
   WISHLIST: '/wishlist',
-  MOVIE_DETAIL: '/movie/:movieId'
+  MOVIE_DETAIL: '/movie/:id'
 };
 

@@ -25,7 +25,7 @@ const MovieCard = ({ movie }) => {
   };
 
   const handleCardClick = () => {
-    navigate(ROUTES.MOVIE_DETAIL.replace(':movieId', movie.id));
+    navigate(ROUTES.MOVIE_DETAIL.replace(':id', movie.id));
   };
 
   return (
