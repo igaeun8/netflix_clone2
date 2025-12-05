@@ -137,9 +137,10 @@
 }
 
 .production-section h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #aaa;
+  border-left: 4px solid #e50914;
+  padding-left: 1rem;
 }
 
 .companies {
