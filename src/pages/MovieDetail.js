@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faStar, faCalendarAlt, faClock, faPlay } from '@fortawesome/free-solid-svg-icons';
 import Header from '../components/common/Header';
+import MovieList from '../components/movie/MovieList';
 import { useMovieDetail } from '../hooks/useMovies';
 import { getBackdropUrl, getPosterUrl } from '../utils/imageUrl';
 import './MovieDetail.css';
@@ -135,6 +136,20 @@ const MovieDetail = () => {
                 </div>
               )}
             </div>
+            
+            {movie.recommendations && movie.recommendations.length > 0 && (
+              <div className="recommendations-section">
+                <h3>추천 영화</h3>
+                <div className="recommendations-list">
+                  <MovieList 
+                    title="" 
+                    movies={movie.recommendations} 
+                    loading={false} 
+                    error={null} 
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </main>

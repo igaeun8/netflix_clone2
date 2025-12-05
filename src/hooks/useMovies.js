@@ -159,14 +159,16 @@ export const useMovieDetail = (movieId) => {
       try {
         setLoading(true);
         setError(null);
-        const [detailResponse, videosResponse] = await Promise.all([
+        const [detailResponse, videosResponse, recommendationsResponse] = await Promise.all([
           movieApi.getMovieDetail(movieId),
-          movieApi.getMovieVideos(movieId)
+          movieApi.getMovieVideos(movieId),
+          movieApi.getMovieRecommendations(movieId)
         ]);
         
         setMovie({
           ...detailResponse.data,
-          videos: videosResponse.data.results || []
+          videos: videosResponse.data.results || [],
+          recommendations: recommendationsResponse.data.results || []
         });
       } catch (err) {
         setError(err.message || '영화 상세 정보를 불러오는데 실패했습니다.');
