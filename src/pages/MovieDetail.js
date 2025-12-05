@@ -77,7 +77,28 @@ const MovieDetail = () => {
               <p className="overview">{movie.overview || "상세 줄거리가 없습니다."}</p>
             </div>
 
-            {/* 추가 정보: 제작사, 예산 등 필요시 추가 */}
+            {/* 제작사 정보 */}
+            {movie.production_companies && movie.production_companies.length > 0 && (
+              <div className="production-section">
+                <h3>제작사</h3>
+                <div className="companies">
+                  {movie.production_companies.map(company => (
+                    <div key={company.id} className="company-item">
+                      {company.logo_path ? (
+                        <img 
+                          src={`https://image.tmdb.org/t/p/w200${company.logo_path}`} 
+                          alt={company.name} 
+                          className="company-logo"
+                          title={company.name}
+                        />
+                      ) : (
+                        <span className="company-name">{company.name}</span>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </main>

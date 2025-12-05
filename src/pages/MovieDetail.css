@@ -30,7 +30,7 @@
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 2rem 3rem;
+  padding: 300px 2rem 3rem; /* 상단 패딩 조정됨 */
 }
 
 .back-btn {
@@ -131,6 +131,51 @@
   color: #ddd;
 }
 
+/* 제작사 섹션 */
+.production-section {
+  margin-top: 2rem;
+}
+
+.production-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #aaa;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  max-height: 40px;
+  max-width: 120px;
+  filter: brightness(0) invert(1); /* 로고를 흰색으로 변경 */
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.company-logo:hover {
+  opacity: 1;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  color: #ddd;
+  font-weight: 500;
+}
+
 /* 로딩 및 에러 */
 .detail-loading, .detail-error {
   min-height: 100vh;
@@ -177,6 +222,10 @@
   }
 
   .genres {
+    justify-content: center;
+  }
+  
+  .companies {
     justify-content: center;
   }
 }
