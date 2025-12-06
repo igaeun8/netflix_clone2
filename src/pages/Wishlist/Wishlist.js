@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTh, faList, faHeartBroken } from '@fortawesome/free-solid-svg-icons';
-import Header from '../components/common/Header';
-import MovieCard from '../components/movie/MovieCard';
-import { getWishlist } from '../services/wishlist';
+import Header from '../../components/common/Header';
+import MovieCard from '../../components/movie/MovieCard';
+import { getWishlist } from '../../services/wishlist';
 import './Wishlist.css';
 
 const Wishlist = () => {
