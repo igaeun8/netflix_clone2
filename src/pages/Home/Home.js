@@ -1,13 +1,13 @@
 // 홈 페이지
 import React from 'react';
-import Header from '../components/common/Header';
-import MovieList from '../components/movie/MovieList';
+import Header from '../../components/common/Header';
+import MovieList from '../../components/movie/MovieList';
 import { 
   usePopularMovies, 
   useNowPlayingMovies, 
   useTopRatedMovies, 
   useUpcomingMovies 
-} from '../hooks/useMovies';
+} from '../../hooks/useMovies';
 import './Home.css';
 
 const Home = () => {
