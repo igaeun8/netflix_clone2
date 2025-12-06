@@ -1,9 +1,9 @@
 // 로그인/회원가입 페이지
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import AuthForm from '../components/auth/AuthForm';
-import { isLoggedIn } from '../services/auth';
-import { ROUTES } from '../constants/routes';
+import AuthForm from '../../components/auth/AuthForm';
+import { isLoggedIn } from '../../services/auth';
+import { ROUTES } from '../../constants/routes';
 import './SignIn.css';
 
 const SignIn = () => {

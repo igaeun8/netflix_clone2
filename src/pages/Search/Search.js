@@ -1,9 +1,9 @@
 // 검색 페이지
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Header from '../components/common/Header';
-import MovieCard from '../components/movie/MovieCard';
-import { useMovieSearch, useGenres } from '../hooks/useMovies';
+import Header from '../../components/common/Header';
+import MovieCard from '../../components/movie/MovieCard';
+import { useMovieSearch, useGenres } from '../../hooks/useMovies';
 import './Search.css';
 
 const Search = () => {
