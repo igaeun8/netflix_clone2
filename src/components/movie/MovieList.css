@@ -75,7 +75,6 @@
   border-bottom-left-radius: 4px;
 }
 
-.movie-list-loading,
 .movie-list-error {
   padding: 2rem;
   text-align: center;
