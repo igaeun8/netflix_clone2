@@ -210,5 +210,40 @@ export const useGenres = () => {
   return { genres, loading, error };
 };
 
+export const useGenreMovies = (genreId, page = 1) => {
+  const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    if (!genreId) {
+      setMovies([]);
+      setLoading(false);
+      return;
+    }
+
+    const fetchMovies = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const response = await movieApi.discoverMovies({
+          with_genres: genreId,
+          page
+        });
+        setMovies(response.data.results || []);
+      } catch (err) {
+        setError(err.message || '장르별 영화를 불러오는데 실패했습니다.');
+        setMovies([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMovies();
+  }, [genreId, page]);
+
+  return { movies, loading, error };
+};
+
 
 
