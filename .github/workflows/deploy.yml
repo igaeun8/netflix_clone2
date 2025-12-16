@@ -54,4 +54,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      
+      - name: Display deployment URL
+        run: |
+          echo "🚀 배포가 완료되었습니다!"
+          echo "📍 배포 URL: https://igaeun8.github.io/netflix_clone2"
+          echo "🔗 페이지 URL: ${{ steps.deployment.outputs.page_url }}"
 
