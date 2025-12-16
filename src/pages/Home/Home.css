@@ -304,47 +304,78 @@
 @media (max-width: 768px) {
   .main-banner {
     height: 50vh;
+    min-height: 300px;
   }
 
   .banner-content {
     padding: 0 1rem;
-    margin-top: 50px;
+    margin-top: 40px;
+    max-width: 100%;
   }
 
   .banner-meta {
+    font-size: 0.85rem;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .banner-rating {
+    font-size: 0.85rem;
+  }
+
+  .banner-rating .star-icon {
     font-size: 0.9rem;
-    gap: 0.8rem;
+  }
+
+  .banner-genres {
+    font-size: 0.8rem;
   }
 
   .banner-title {
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
   }
 
   .banner-description {
-    font-size: 1rem;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
     -webkit-line-clamp: 2;
+    margin-bottom: 1.25rem;
   }
 
   .banner-buttons {
     flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
   .banner-btn {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.9rem;
+    gap: 0.4rem;
+  }
+
+  .banner-btn.play {
     padding: 0.6rem 1.5rem;
-    font-size: 0.95rem;
+  }
+
+  .banner-btn.info,
+  .banner-btn.wishlist {
+    padding: 0.6rem;
+    min-width: 44px;
   }
 
   .banner-indicators {
-    bottom: 20px;
+    bottom: 15px;
+    gap: 0.4rem;
   }
 
   .indicator {
-    width: 30px;
+    width: 25px;
     height: 3px;
   }
 
   .indicator.active {
-    width: 50px;
+    width: 40px;
   }
 
   .trailer-content {
@@ -353,5 +384,71 @@
 
   .home-content {
     margin-top: 0;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-banner {
+    height: 45vh;
+    min-height: 250px;
+  }
+
+  .banner-content {
+    padding: 0 0.75rem;
+    margin-top: 30px;
+  }
+
+  .banner-meta {
+    font-size: 0.75rem;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-description {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+    margin-bottom: 1rem;
+  }
+
+  .banner-buttons {
+    gap: 0.5rem;
+  }
+
+  .banner-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .banner-btn.play {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .banner-btn.info,
+  .banner-btn.wishlist {
+    padding: 0.5rem;
+    min-width: 40px;
+  }
+
+  .banner-btn svg {
+    font-size: 0.9rem;
+  }
+
+  .banner-indicators {
+    bottom: 10px;
+  }
+
+  .indicator {
+    width: 20px;
+    height: 2px;
+  }
+
+  .indicator.active {
+    width: 35px;
   }
 }

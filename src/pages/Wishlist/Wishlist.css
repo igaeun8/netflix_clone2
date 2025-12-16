@@ -196,10 +196,11 @@
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
+    margin-bottom: 1.5rem;
   }
 
   .wishlist-header h1 {
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem, 5vw, 1.5rem);
   }
 
   .view-toggle {
@@ -214,6 +215,10 @@
     font-size: 0.8rem;
   }
 
+  .toggle-btn span {
+    display: none;
+  }
+
   .movie-container.table-view,
   .movie-container.infinite-view {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -223,6 +228,7 @@
   .pagination {
     gap: 1rem;
     margin-top: 2rem;
+    padding: 1.25rem 0;
   }
 
   .page-btn {
@@ -241,5 +247,87 @@
     bottom: 1.5rem;
     right: 1.5rem;
     font-size: 1.1rem;
+  }
+
+  .empty-wishlist {
+    padding: 3rem 0;
+  }
+
+  .empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .empty-wishlist h2 {
+    font-size: 1.5rem;
+  }
+
+  .empty-wishlist p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlist-content {
+    padding: 70px 0.75rem 1.5rem;
+  }
+
+  .wishlist-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .wishlist-header h1 {
+    font-size: clamp(1.2rem, 6vw, 1.4rem);
+  }
+
+  .toggle-btn {
+    padding: 0.45rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .movie-container.table-view,
+  .movie-container.infinite-view {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .pagination {
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .page-btn {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8rem;
+  }
+
+  .page-info {
+    font-size: 0.85rem;
+    min-width: 50px;
+  }
+
+  .top-btn {
+    width: 40px;
+    height: 40px;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+  }
+
+  .empty-wishlist {
+    padding: 2.5rem 0;
+  }
+
+  .empty-icon {
+    font-size: 3.5rem;
+  }
+
+  .empty-wishlist h2 {
+    font-size: 1.3rem;
+  }
+
+  .empty-wishlist p {
+    font-size: 0.95rem;
   }
 }

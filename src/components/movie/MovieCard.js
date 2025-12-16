@@ -65,7 +65,7 @@ const MovieCard = ({ movie }) => {
 
   return (
     <div 
-      className="movie-card"
+      className={`movie-card ${isWished ? 'wished' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleCardClick}
