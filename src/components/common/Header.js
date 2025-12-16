@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { ROUTES } from '../../constants/routes';
 import { getCurrentUser, logout } from '../../services/auth';
+import logo from '../../logo.svg';
 import './Header.css';
 
 const Header = () => {
@@ -87,7 +88,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-content">
         <Link to={ROUTES.HOME} className="logo" onClick={handleNavClick}>
-          NETFLUX
+          <img src={logo} alt="NETFLUX" className="logo-img" />
         </Link>
         
         {/* 데스크톱 네비게이션 */}
