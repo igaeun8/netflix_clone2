@@ -2,7 +2,6 @@
 
 React.js를 활용한 Netflix 스타일의 영화 스트리밍 플랫폼 클론 프로젝트입니다. TMDB API를 사용하여 실시간 영화 정보를 제공하고, Local Storage를 활용한 사용자 데이터 관리 및 반응형 웹 디자인을 구현합니다.
 
-![Netflux](https://github.com/user-attachments/assets/2bbd19e1-2a13-4498-97c2-39aaae2ae4f1)
 
 🌐 **라이브 데모**: [https://igaeun8.github.io/netflux](https://igaeun8.github.io/netflux)
 
@@ -381,43 +380,6 @@ git push origin feature/new-feature
 
 ---
 
-## 🐛 이슈 등록 방법
-
-### 이슈 템플릿
-
-1. **버그 리포트**
-   - 제목: `[Bug] 버그 설명`
-   - 내용: 재현 단계, 예상 동작, 실제 동작, 환경 정보
-
-2. **기능 제안**
-   - 제목: `[Feature] 기능 설명`
-   - 내용: 기능 설명, 사용 사례, 추가 고려사항
-
-3. **문서 개선**
-   - 제목: `[Docs] 문서 개선 내용`
-   - 내용: 개선할 내용 설명
-
-### 이슈 등록 예시
-
-```markdown
-## 버그 설명
-영화 카드를 클릭했을 때 상세 페이지로 이동하지 않습니다.
-
-## 재현 단계
-1. 홈 페이지 접속
-2. 영화 카드 클릭
-3. 페이지 이동 없음
-
-## 예상 동작
-영화 상세 페이지로 이동해야 합니다.
-
-## 환경
-- 브라우저: Chrome 120
-- OS: macOS 14
-```
-
----
-
 ## 📖 추가 문서 링크 (Optional)
 
 ### API 문서
@@ -449,24 +411,6 @@ git push origin feature/new-feature
 
 ---
 
-## 📝 변경 이력
-
-### v0.1.0 (최신)
-
-- ✅ 홈 페이지 카테고리 네비게이션 추가
-- ✅ 테이블 뷰에서 페이지당 24개 표시
-- ✅ 페이지 헤더 UI 개선 (제목/설명 왼쪽 정렬, 뷰 토글 오른쪽 정렬)
-- ✅ 반응형 디자인 개선
-- ✅ GitHub Pages 주소 변경 (netflux)
-
-### 주요 변경사항
-
-- **UI/UX 개선**: 카테고리 네비게이션 카드에 배경 이미지 추가
-- **페이지네이션**: 테이블 뷰에서 24개씩 표시하도록 최적화
-- **레이아웃**: 모든 페이지 헤더 레이아웃 통일
-
----
-
 ## 🔗 관련 프로젝트 링크
 
 - **라이브 데모**: [https://igaeun8.github.io/netflux](https://igaeun8.github.io/netflux)
@@ -474,12 +418,6 @@ git push origin feature/new-feature
 - **TMDB API**: [https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api)
 - **React 공식 문서**: [https://react.dev](https://react.dev)
 - **React Router 문서**: [https://reactrouter.com](https://reactrouter.com)
-
----
-
-## 📄 라이선스
-
-이 프로젝트는 교육 목적으로 제작되었습니다.
 
 ---
 
