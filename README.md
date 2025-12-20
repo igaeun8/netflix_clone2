@@ -3,7 +3,7 @@
 React.js를 활용한 Netflix 스타일의 영화 스트리밍 플랫폼 클론 프로젝트입니다. TMDB API를 사용하여 실시간 영화 정보를 제공하고, Local Storage를 활용한 사용자 데이터 관리 및 반응형 웹 디자인을 구현합니다.
 
 
-🌐 **라이브 데모**: [https://igaeun8.github.io/netflux](https://igaeun8.github.io/netflux)
+🌐 **라이브 데모**: [https://igaeun8.github.io/netflix_clone2](https://igaeun8.github.io/netflix_clone2)
 
 ---
 
@@ -11,7 +11,7 @@ React.js를 활용한 Netflix 스타일의 영화 스트리밍 플랫폼 클론 
 
 ### 프로젝트 소개
 
-Netflux는 Netflix의 UI/UX를 참고하여 제작된 영화 스트리밍 플랫폼 클론입니다. React.js를 기반으로 Single Page Application(SPA)을 구현하고, TMDB API를 통해 실시간 영화 데이터를 제공합니다.
+Netflix_clone2는 Netflix의 UI/UX를 참고하여 제작된 영화 스트리밍 플랫폼 클론입니다. React.js를 기반으로 Single Page Application(SPA)을 구현하고, TMDB API를 통해 실시간 영화 데이터를 제공합니다.
 
 ### 주요 특징
 
@@ -60,8 +60,8 @@ Netflux는 Netflix의 UI/UX를 참고하여 제작된 영화 스트리밍 플랫
 
 1. **저장소 클론**
 ```bash
-git clone https://github.com/igaeun8/netflux.git
-cd netflux
+git clone https://github.com/igaeun8/netflix_clone2.git
+cd netflix_clone2
 ```
 
 2. **의존성 설치**
@@ -97,7 +97,7 @@ npm test
 ## 📁 프로젝트 (폴더) 구조
 
 ```
-netflux/
+netflix_clone2/
 ├── public/                    # 정적 파일
 │   ├── index.html            # HTML 템플릿
 │   ├── manifest.json         # PWA 매니페스트
@@ -313,7 +313,7 @@ feat(ui): 홈 페이지 카테고리 네비게이션 추가
 
 fix(pagination): 테이블 뷰에서 24개씩 표시하도록 수정
 
-chore: GitHub Pages 주소를 netflux로 변경
+chore: GitHub Pages 주소를 netflix_clone2로 변경
 ```
 
 ---
@@ -413,8 +413,8 @@ git push origin feature/new-feature
 
 ## 🔗 관련 프로젝트 링크
 
-- **라이브 데모**: [https://igaeun8.github.io/netflux](https://igaeun8.github.io/netflux)
-- **GitHub 저장소**: [https://github.com/igaeun8/netflux](https://github.com/igaeun8/netflux)
+- **라이브 데모**: [https://igaeun8.github.io/netflix_clone2](https://igaeun8.github.io/netflix_clone2)
+- **GitHub 저장소**: [https://github.com/igaeun8/netflix_clone2](https://github.com/igaeun8/netflix_clone2)
 - **TMDB API**: [https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api)
 - **React 공식 문서**: [https://react.dev](https://react.dev)
 - **React Router 문서**: [https://reactrouter.com](https://reactrouter.com)
